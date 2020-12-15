@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+    <%object.forEach(val=>%>
+    <h2><%=val.Country%></h2>
+    <p><%=TotalConfirmed%></p>
+    <p><%=TotalDeaths%></p>
+    <p><%=TotalRecovered%></p>
+    <p><%=Date%></p>
+
+    <form action="/covidLite" method="POST">
+    <input type="hidden" name="country" value="<%=val.Country%>">
+    <input type="hidden" name="country" value="<%=TotalConfirmed%>">
+    <input type="hidden" name="country" value="<%=TotalDeaths%>">
+    <input type="hidden" name="country" value="<%=TotalRecovered%>">
+    <input type="hidden" name="country" value="<%=Date%>">
+    <button>submit</button>
+
+    
+
+
+
+    
+
+
+    
+    
+    
+    
+    </form>
+
+
+    
+    %>
+</main>
+</body>
+</html>
